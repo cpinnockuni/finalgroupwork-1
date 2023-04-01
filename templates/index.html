@@ -2,10 +2,19 @@
 
 <header>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+      <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+ 
+    
     <nav class="nav">
       <div class="nav-main">
         <div class="logo"><a href="/">FRESH <span class="startcolor">START</span></a></div>
@@ -13,7 +22,7 @@
           <li class="nav-link"><a href="{{url_for ('home')}}">Home</a></li>
           <li class="nav-link"><a href="{{url_for ('about')}}">About</a></li>
           <li class="nav-link dropdown">
-            <a href="#" class="dropdown">Services <i class="bi bi-chevron-compact-down"></i></a>
+            <a href="#"s class="dropdown">Services <i class="bi bi-chevron-compact-down"></i></a>
             <ul class="dropdown-list">
                 <li class="nav-link"><a href="{{ url_for('community') }}">Community</a></li>
                 <li class="nav-link"><a href="{{ url_for('fresherguide') }}">Fresher Guide</a></li>
@@ -48,6 +57,81 @@
     
  <!--BODY THE WEBISTE-->
 
+<!--HERO SECTION OF THE PAGE-->
+
+
+
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>A digital Platform that help freshers find their way around.
+            </h1>
+            <p>
+              Relocating to the UK is a daunting process for international students. Are you feeling lost,confused and overwhelmed about the next step to take on arrival on campus? We have a guide to make your stay with us more convenient and exciting. Click on the button below to get started
+
+
+            </p>
+            <div class="button">
+              <a href="#" class="btn primary-btn">Get Started</a>
+            <div class="button">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="{{ url_for('static', filename='images/Rectangle.png') }}" alt="My Image">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<!--ABOUT US OF THE PAGE-->
+<section class="aboutussection">
+
+<div class="aboutus">
+<h1> ABOUT US </h1>
+<p>
+What can Freshstart do for you?
+At Freshstart, our goal is to help international
+students get settled into college life as quickly
+and easily as possible.
+We understand how daunting 
+the prospect of attending 
+a university can be, especially
+in a new country with a new culture
+and language. Read more....
+    
+
+
+</p>
+
+</div>
+<div class="image">  
+  <img src="{{ url_for('static', filename='images/aboutus.png') }}" alt="My Image">
+
+</div>
+
+<div class="bottomofimage">  
+
+  <a href="{{url_for ('about')}}" class="aboutusreadmore">View More </a>
+</div>
+
+
+
+
+</section>
+<!--END OF SECTION-->
 
 
 
@@ -56,24 +140,281 @@
 
 
 
+  <!-- End header Area -->
+
+  <!--====== ABOUT FIVE PART START ======-->
+
+
+  <!--====== ABOUT FIVE PART ENDS ======-->
 
 
 
 
 
 
+  <!-- Start Cta Area -->
+  <section id="call-action" class="call-action">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+          <div class="inner-content">
+            <h2>We love to make perfect <br />solutions for your business</h2>
+            <p>
+              Why I say old chap that is, spiffing off his nut cor blimey
+              guvnords geeza<br />
+              bloke knees up bobby, sloshed arse William cack Richard. Bloke
+              fanny around chesed of bum bag old lost the pilot say there
+              spiffing off his nut.
+            </p>
+            <div class="light-rounded-buttons">
+              <a href="javascript:void(0)" class="btn primary-btn-outline">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Cta Area -->
 
 
+  <!-- Start Pricing  Area -->
+  <section id="pricing" class="pricing-area pricing-fourteen">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Community</h6>
+             
+              <p>
+                Our mission is to provide an online platform dedicated to helping our students connect with the right people and places.          
+                
+                <a href="#"> Read more.... </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-10">
+          <div class="pricing-style-fourteen">
+            <div class="table-head">
+              <img src="{{ url_for('static', filename='images/animie.png') }}" alt="My Image">
+              
+      
+
+               
+               
+            </div>
+            <br>
+            <h6> Anime</h6>
+        
+
+            <div class="table-content">
+              <ul class="table-list">
+                <p>Nisi fermentum elementum quam volutpat neque lectus est. In vel lacus tempor </p>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col-lg-3 col-md-5 col-10">
+          <div class="pricing-style-fourteen">
+            <div class="table-head">
+              <img src="{{ url_for('static', filename='images/readingclub.png') }}" alt="My Image">
+              
+      
+               
+            </div>
+
+          
+
+            <div class="table-content">
+              <ul class="table-list">
+                <p> Nisi fermentum elementum quam volutpat neque lectus est. In vel lacus tempor </p>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-5 col-10">
+          <div class="pricing-style-fourteen">
+            <div class="table-head">
+              <img src="{{ url_for('static', filename='images/gaming.png') }}" alt="My Image">
+              
+      
+            </div>
+
+         
+            <div class="table-content">
+              <ul class="table-list">
+              
+                <p>Nisi fermentum elementum quam volutpat neque lectus est. In vel lacus tempor </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 col-10">
+          <div class="pricing-style-fourteen">
+            <div class="table-head">
+                <img src="{{ url_for('static', filename='images/chess.png') }}" alt="My Image">
 
 
+               
+            </div>
+<br>
+            <div class="table-content">
+              <h6> Chess Society </h6>
+              <ul class="table-list">
+                <p> Any skill level welcome, new players encouraged, prize incentives, and guest speakers. </p>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+                
+            
+            </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ End Pricing  Area -->
 
+ 
+  <section class="about-area about-five">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12">
+          <div class="about-image-five">
+            
+            <img src="{{url_for ('static', filename='images/blog.png')}}" alt="about" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="about-five-content">
+            <h6 class="small-title text-lg">BLOG</h6>
+            <h2 class="main-title fw-bold">Our team comes with the experience and knowledge</h2>
+            <div class="about-five-tab">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
+                    type="button" role="tab" aria-controls="nav-who" aria-selected="true">Who We Are</button>
+                  <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
+                    type="button" role="tab" aria-controls="nav-vision" aria-selected="false">our Vision</button>
+               
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, look like readable English.</p>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
+                    form,
+                    by injected humour.</p>
+                </div>
+                <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, look like readable English.</p>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
+                    form,
+                    by injected humour.</p>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+  </section>
 
+  <!-- ========================= contact-section start ========================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="contact-item-wrapper">
 
+        <div class="col-xl-8">
+          <div class="contact-form-wrapper">
+            <div class="row">
+              <div class="col-xl-10 col-lg-8 mx-auto">
+                <div class="section-title text-center">
+                  <span> Get in Touch </span>
+                  <h2>
+                    Ready to Get Started
+                  </h2>
+                  <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    quiblanditiis praesentium
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form action="#" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="name" id="name" placeholder="Name" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="email" id="email" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="phone" id="phone" placeholder="Phone" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="subject" id="email" placeholder="Subject" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="button text-center rounded-buttons">
+                    <button type="submit" class="btn primary-btn rounded-full">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= contact-section end ========================= -->
 
-
-
-
-
+  <!-- ========================= map-section end ========================= -->
+  <section class="map-section map-style-9">
+    <div class="map-container">
+      <object style="border:0; height: 500px; width: 100%;"
+        data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
+    </div>
+    </div>
+  </section>
 
 
 
@@ -124,9 +465,12 @@
     </footer>
   </header>
   
-  <style>
-    /* Add your CSS styles here */
-  </style>
+<!--====== js ======-->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/tiny-slider.js') }}"></script>
+
   
   <script>
     const menuButton = document.querySelector(".menu");
