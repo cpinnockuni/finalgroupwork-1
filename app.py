@@ -81,7 +81,7 @@ def signup():
 
 @app.route("/about")
 def about():
-    pass 
+    return render_template("about.html")
 
 
 
@@ -97,9 +97,9 @@ def contact():
 
 
 @app.route("/services/community")
-@login_required
+
 def community():
-    pass 
+   return render_template("community.html")
 
 
 
@@ -107,7 +107,7 @@ def community():
 
 @app.route("/services/freshergude")
 def fresherguide():
-    pass
+    return render_template("fresherguide.html")
 
 
 

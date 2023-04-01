@@ -6,46 +6,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
-    
-    
     <nav class="nav">
       <div class="nav-main">
         <div class="logo"><a href="/">FRESH <span class="startcolor">START</span></a></div>
         <ul class="nav-links">
-          <li class="nav-link"><a href="/">Home</a></li>
-          <li class="nav-link"><a href="about">About</a></li>
+          <li class="nav-link"><a href="{{url_for ('home')}}">Home</a></li>
+          <li class="nav-link"><a href="{{url_for ('about')}}">About</a></li>
           <li class="nav-link dropdown">
             <a href="#" class="dropdown">Services <i class="bi bi-chevron-compact-down"></i></a>
             <ul class="dropdown-list">
-              <li class="nav-link"><a href="/blog">Community</a></li>
-              <li class="nav-link"><a href="fresher">Fresher Guide</a></li>
-            </ul>
+                <li class="nav-link"><a href="{{ url_for('community') }}">Community</a></li>
+                <li class="nav-link"><a href="{{ url_for('fresherguide') }}">Fresher Guide</a></li>
+              </ul>
           </li>
-          <li class="nav-link"><a href="contact">Contact</a></li>
+          <li class="nav-link"><a href="{{url_for ('contact')}}">Contact</a></li>
         </ul>
       </div>
       <div class="cta">
-        <a href="signup"><button class="btn btn-secondary">SignUp</button></a>
+        <a href="{{ url_for('signup') }}"><button class="btn btn-secondary">SignUp</button></a>
         <a href="{{ url_for('login') }}"><button class="btn btn-primary">Login</button></a>
       </div>
       <div class="menu">
         <button class="btn btn-primary menu menu-open"><i class="bi-list"></i></button>
         <ul class="nav-mobile">
-          <li class="nav-link"><a href="/">Home</a></li>
-          <li class="nav-link"><a href="about">About</a></li>
+          <li class="nav-link"><a href="{{url_for ('home')}}">Home</a></li>
+          <li class="nav-link"><a href="{{url_for ('about')}}">About</a></li>
           <li class="nav-link dropdown">
             <a href="#" class="dropdown">Services <i class="bi bi-chevron-compact-down"></i></a>
             <ul class="dropdown-list">
-              <li class="nav-link"><a href="community">Community</a></li>
-              <li class="nav-link"><a href="fresher">Fresher Guide</a></li>
+              <li class="nav-link"><a href="{{url_for ('community')}}">Community</a></li>
+              <li class="nav-link"><a href="{{url_for ('fresherguide')}}">Fresher Guide</a></li>
             </ul>
           </li>
-          <li class="nav-link"><a href="contact">Contact</a></li>
-          <li class="nav-link"><a href="signup">SignUp</a></li>
-          <li class="nav-link"><a href="{{ url_for('login') }}">Login</a></li>
+          <li class="nav-link"><a href="{{url_for ('contact')}}">Contact</a></li>
+          <li class="nav-link"><a href="{{url_for ('signup')}}">SignUp</a></li>
+          <li class="nav-link"><a href="{{url_for ('login')}}">Login</a></li>
         </ul>
       </div>
+    </nav>
     </nav>
     
  <!--BODY THE WEBISTE-->

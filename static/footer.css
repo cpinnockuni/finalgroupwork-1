@@ -130,7 +130,8 @@ fieldset{
                FOOTER
 ****************************/
 footer{
-    
+  
+
   
   left: 0;
   bottom: 0;
@@ -138,6 +139,7 @@ footer{
     background-color:var(--primary);
     color:var(--lite);
     font-family: 'Poppins', sans-serif;
+
 
 }
 
