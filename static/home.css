@@ -94,8 +94,9 @@ background-color: #4B8FD0;
 html { overflow-y: scroll; overflow-x:hidden; }
 body { position: absolute; }
 body {
+
   width: 100%;
-margin: auto;
+  height: 100%;
 }
 
 
@@ -283,9 +284,30 @@ button:focus {
 .hero1 {
 
   background-image: url("images/Rectangle.png");
-  height: 40vh;
+ height: 40vh;
 }
 
+@media (max-width: 767px) {
+ .hero1 {
+  margin-bottom: 180px;
+  background-image: url("images/Rectangle.png");
+
+ }
+.hero1 p {
+  width: 80%;
+}
+
+.hero1 h1 {
+  width: 80%;
+}
+
+.hero1 img {
+
+  height: 10vh;
+  width: 10vw;
+}
+
+  }
 
 .hero1  h1 {
 
