@@ -54,9 +54,24 @@
     cursor: pointer;
 }
 
+.viewmore{ 
+    text-align: center;
+}
 
 
 
+
+#blue {
+
+background-color: #4B8FD0;
+}
+
+
+#yellow {
+
+    background-color: #EEC833;
+
+}
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 /*===========================
   COMMON css 
@@ -377,11 +392,7 @@ button:focus {
     padding: 130px 0 80px 0;
   }
 }
-@media (max-width: 767px) {
-  .header-eight {
-    padding: 100px 0 60px 0;
-  }
-}
+
 .header-eight .header-image img {
   width: 100%;
   border-radius: 8px;

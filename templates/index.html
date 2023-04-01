@@ -28,7 +28,7 @@
                 <li class="nav-link"><a href="{{ url_for('fresherguide') }}">Fresher Guide</a></li>
               </ul>
           </li>
-          <li class="nav-link"><a href="{{url_for ('contact')}}">Contact</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="cta">
@@ -47,7 +47,7 @@
               <li class="nav-link"><a href="{{url_for ('fresherguide')}}">Fresher Guide</a></li>
             </ul>
           </li>
-          <li class="nav-link"><a href="{{url_for ('contact')}}">Contact</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
           <li class="nav-link"><a href="{{url_for ('signup')}}">SignUp</a></li>
           <li class="nav-link"><a href="{{url_for ('login')}}">Login</a></li>
         </ul>
@@ -228,17 +228,19 @@ and language. Read more....
                 <a href="#"> Read more.... </a>
               </p>
             </div>
+        
           </div>
         </div>
         <!-- row -->
       </div>
+      
       <!-- container -->
     </div>
     <!--======  End Section Title Five ======-->
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-5 col-10">
-          <div class="pricing-style-fourteen">
+        <div class="col-lg-3 col-md-5 col-10" >
+          <div class="pricing-style-fourteen" id="blue" >
             <div class="table-head">
               <img src="{{ url_for('static', filename='images/Group5.png') }}" alt="My Image">
               
@@ -252,16 +254,19 @@ and language. Read more....
         
 
             <div class="table-content">
-              <ul class="table-list">
-                <p>Enjoy live matches in Molineux Stadium with discounted ticket prizes </p>
+              
+                <p>
+                  Enjoy live matches in Molineux Stadium with discounted ticket prizes
+                
+                </p>
                
-              </ul>
+            
             </div>
           </div>
         </div>
        
-        <div class="col-lg-3 col-md-5 col-10">
-          <div class="pricing-style-fourteen">
+        <div class="col-lg-3 col-md-5 col-10" >
+          <div class="pricing-style-fourteen" id="yellow">
             <div class="table-head">
               <img src="{{ url_for('static', filename='images/Group6.png') }}" alt="My Image">
               
@@ -269,36 +274,47 @@ and language. Read more....
                
             </div>
 
-          
+            <br>
+            <h6> Upcoming Events</h6>
+        
 
             <div class="table-content">
-              <ul class="table-list">
-                <p> Nisi fermentum elementum quam volutpat neque lectus est. In vel lacus tempor </p>
-               
-              </ul>
+              
+                <p> 
+                  
+                  Subscribe to our Newsletter for exciting upcoming events.
+                
+                </p>
+            
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-5 col-10">
-          <div class="pricing-style-fourteen">
+        <div class="col-lg-3 col-md-5 col-10" >
+          <div class="pricing-style-fourteen" id="blue">
             <div class="table-head">
               <img src="{{ url_for('static', filename='images/Group7.png') }}" alt="My Image">
               
       
             </div>
-
+            <br>
+            <h6> Weekend Tours</h6>
+        
          
             <div class="table-content">
-              <ul class="table-list">
+            
               
-                <p>Nisi fermentum elementum quam volutpat neque lectus est. In vel lacus tempor </p>
-              </ul>
+                <p>
+                  
+                  Enjoy a tour around the West Midlands beautiful scenaries
+                
+                </p>
+              
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-5 col-10">
-          <div class="pricing-style-fourteen">
+        <div class="col-lg-3 col-md-5 col-10" >
+          <div class="pricing-style-fourteen" id="yellow">
             <div class="table-head">
                 <img src="{{ url_for('static', filename='images/Ellipse17.png') }}" alt="My Image">
 
@@ -307,11 +323,15 @@ and language. Read more....
             </div>
 <br>
             <div class="table-content">
-              <h6> Chess Society </h6>
-              <ul class="table-list">
-                <p> Any skill level welcome, new players encouraged, prize incentives, and guest speakers. </p>
+              <h6> Part Time Jobs </h6>
+             
+                <p>
+                  Make money while you study
+                
+                
+                </p>
               
-              </ul>
+            
             </div>
           </div>
         </div>
@@ -319,12 +339,29 @@ and language. Read more....
             
             </div>
            
+          
             </div>
           </div>
         </div>
       </div>
     </div>
+    <br>
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>View More Services</h6>
+             
+            </div>
+        
+          </div>
+        </div>
+        <!-- row -->
+      </div>
   </section>
+
+ 
   <!--/ End COMMUNITY Area -->
 
 

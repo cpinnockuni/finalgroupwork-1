@@ -19,7 +19,7 @@
                 <li class="nav-link"><a href="{{ url_for('fresherguide') }}">Fresher Guide</a></li>
               </ul>
           </li>
-          <li class="nav-link"><a href="{{url_for ('contact')}}">Contact</a></li>
+          <li class="nav-link"><a href="/home/#contact">Contact</a></li>
         </ul>
       </div>
       <div class="cta">
@@ -52,11 +52,72 @@
 
 
 
+ <div class="card-container">
+    <div class="card card1">
+      <h2>Card 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="card card2">
+      <h2>Card 2</h2>
+      <p>Integer ullamcorper pulvinar libero vel mattis.</p>
+    </div>
+    <div class="card card3">
+      <h2>Card 3</h2>
+      <p>Donec non velit nunc. Etiam eleifend, magna quis ultrices blandit.</p>
+    </div>
+  </div>
+  
+  
+  
+  <style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      
+      .card {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      
+      .card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        transform: skewX(-15deg);
+        z-index: -1;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .card-container {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          overflow-x: scroll;
+        }
+      
+        .card {
+          margin: 20px 0;
+        }
+      }
+      
+      
+      
 
-
-
-
-
+  </style>
 
 
 
