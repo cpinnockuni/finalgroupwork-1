@@ -49,77 +49,42 @@
 
 
 
+<section class="aboutussection">
+  <h1 class="aboutit"> ABOUT US </h1>
+<div class="aboutus" id="aboutus">
+
+<br>
+<p>
+What can Freshstart do for you?
+At Freshstart, our goal is to help international
+students get settled into college life as quickly
+and easily as possible.
+We understand how daunting 
+the prospect of attending 
+a university can be, especially
+in a new country with a new culture
+and language. Read more....
+    
 
 
+</p>
 
- <div class="card-container">
-    <div class="card card1">
-      <h2>Card 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="card card2">
-      <h2>Card 2</h2>
-      <p>Integer ullamcorper pulvinar libero vel mattis.</p>
-    </div>
-    <div class="card card3">
-      <h2>Card 3</h2>
-      <p>Donec non velit nunc. Etiam eleifend, magna quis ultrices blandit.</p>
-    </div>
-  </div>
-  
-  
-  
-  <style>
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-      }
-      
-      .card {
-        position: relative;
-        width: 300px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-      }
-      
-      .card:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: -30px;
-        background-color: rgba(0, 0, 0, 0.1);
-        transform: skewX(-15deg);
-        z-index: -1;
-      }
-      
-      @media only screen and (max-width: 768px) {
-        .card-container {
-          display: flex;
-          flex-direction: row;
-          align-items: stretch;
-          overflow-x: scroll;
-        }
-      
-        .card {
-          margin: 20px 0;
-        }
-      }
-      
-      
-      
+</div>
+<div class="image">  
+  <img src="{{ url_for('static', filename='images/aboutus.png') }}" alt="My Image">
 
-  </style>
+</div>
+
+<div class="bottomofimage">  
+
+  <a href="{{url_for ('about')}}" class="aboutusreadmore">View More </a>
+</div>
 
 
+<br>
+<br>
+
+</section>
 
 
 

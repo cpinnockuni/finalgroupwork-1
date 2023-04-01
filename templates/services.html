@@ -27,12 +27,12 @@
       <ul class="nav-menu">
       
         <li class="active"><a href="{{ url_for ('home') }}">Home</a></li>
-        <li><a href=""{{ url_for ('about') }}">About</a></li>
-        <li><a href="{{ url_for ('fresherguide') }}">Fresher Guide</a></li>
+        <li><a href="{{ url_for ('about') }}">About</a></li>
+        <li><a href="{{ url_for ('fresherguide') }}">Fresher Guide</a> </li>
        
-        <li><a href=""{{ url_for ('community' )}}" class="sep">Community</a></li>
-        <li><a href=""{{ url_for ('signup') }}">SignUp</a></li>
-        <li><a href=""{{ url_for ('login') }}}" class="loginbut">Login</a></li>
+        <li><a href="{{ url_for ('community' )}}" class="sep">Community</a></li>
+        <li><a href="{{ url_for ('signup') }}">SignUp</a></li>
+        <li><a href="{{ url_for ('login') }}" class="loginbut">Login</a></li>
       </ul>
     </div>
       <i class='menu-hamburger'>
@@ -48,6 +48,27 @@
 <br>
 
 
+
+
+<section class="hero1">
+
+  <h1>A digital Platform that help freshers find their way around.</h1>
+<p> Relocating to the UK is a daunting process for international students. Are you feeling lost,confused and overwhelmed about the next step to take on arrival on campus? We have a guide to make your stay with us more convenient and exciting. Click on the button below to get started </p>
+
+<div class="buttonshero">
+
+  <a href="#" class="buttonn1 butstart"> GETSTARTED <a/>
+<span> <a href="#" class="buttonn1 butsign"> SIGNUP <a/> </span>
+</div>
+
+</section>
+
+
+
+
+
+
+<!--ABOUT US OF THE PAGE-->
 <section class="aboutussection">
   <h1 class="aboutit"> ABOUT US </h1>
 <div class="aboutus" id="aboutus">
@@ -85,37 +106,11 @@ and language. Read more....
 
 </section>
 
-    
- <!--BODY THE WEBISTE-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- ========================= map-section end ========================= -->
+ 
+</body>
 
 
     <footer class="padding_4x">
@@ -164,27 +159,22 @@ and language. Read more....
     </footer>
   </header>
   
-  <style>
-    /* Add your CSS styles here */
-  </style>
-  
-  <script>
-    const menuButton = document.querySelector(".menu");
-    const menuItems = document.querySelector(".nav-mobile");
-    
-    menuButton.addEventListener("click", () => {
-      menuButton.classList.toggle("menu-open");
-      menuItems.classList.toggle("open");
-    });
-    
-    document.addEventListener("click", (event) => {
-      if (!menuItems.contains(event.target) && !menuButton.contains(event.target)) {
-        menuButton.classList.remove("menu-open");
-        menuItems.classList.remove("open");
-      }
-    });
-    
-    
+<!--====== js ======-->
+<!--====== js ======-->
+
+<script src="{{ url_for('static', filename='js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/tiny-slider.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger");
+  const navLinks = document.querySelector(".nav-links");
+   
+   menuHamburger.addEventListener('click',()=>{
+          navLinks.classList.toggle('mobile-menu')
+          })
 
     
   </script>
