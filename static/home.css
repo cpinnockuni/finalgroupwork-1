@@ -264,7 +264,7 @@ button:focus {
 }
 
 
-/* One Click Scrool Top Button*/
+
 
 
 /*===========================
@@ -329,143 +329,6 @@ button:focus {
   transform: translateY(-5px);
 }
 
-
-/*===== SIDEBAR ONE =====*/
-.sidebar-left {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: var(--white);
-  height: 100%;
-  width: 350px;
-  padding-top: 80px;
-  z-index: 999;
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
-  transition: all 0.4s ease-in-out;
-  text-align: left;
-}
-.sidebar-left.open {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
-@media (max-width: 767px) {
-  .sidebar-left {
-    width: 250px;
-  }
-}
-.sidebar-left .sidebar-close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-.sidebar-left .sidebar-close .close {
-  font-size: 18px;
-  color: var(--black);
-  -webkit-transition: all 0.2s ease-out 0s;
-  -moz-transition: all 0.2s ease-out 0s;
-  -ms-transition: all 0.2s ease-out 0s;
-  -o-transition: all 0.2s ease-out 0s;
-  transition: all 0.2s ease-out 0s;
-}
-.sidebar-left .sidebar-close .close:hover {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.sidebar-left .sidebar-content {
-  padding: 0px 30px;
-}
-.sidebar-left .sidebar-content .sidebar-menu {
-  margin-top: 30px;
-}
-.sidebar-left .sidebar-content .sidebar-menu .menu-title {
-  font-size: 18px;
-  font-weight: 600;
-}
-.sidebar-left .sidebar-content .sidebar-menu ul {
-  margin-top: 15px;
-}
-.sidebar-left .sidebar-content .sidebar-menu ul li a {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 8px 0;
-  color: var(--dark-3);
-  text-transform: capitalize;
-  position: relative;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  display: block;
-}
-.sidebar-left .sidebar-content .sidebar-menu ul li a:hover {
-  color: var(--primary);
-  padding-left: 5px;
-}
-.sidebar-left .sidebar-content .text {
-  margin-top: 20px;
-}
-.sidebar-left .sidebar-content .sidebar-social {
-  margin-top: 30px;
-}
-.sidebar-left .sidebar-content .sidebar-social .social-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-.sidebar-left .sidebar-content .sidebar-social ul li {
-  display: inline-block;
-  margin-right: 5px;
-}
-.sidebar-left .sidebar-content .sidebar-social ul li:last-child {
-  margin: 0;
-}
-.sidebar-left .sidebar-content .sidebar-social ul li a {
-  height: 38px;
-  width: 38px;
-  line-height: 38px;
-  text-align: center;
-  border: 1px solid #eee;
-  border-radius: 50%;
-  font-size: 18px;
-  color: #666;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-.sidebar-left .sidebar-content .sidebar-social ul li a:hover {
-  color: var(--white);
-  background-color: var(--primary);
-  border-color: transparent;
-}
-
-.overlay-left {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 99;
-}
-.overlay-left.open {
-  display: block;
-}
 
 
 /* ===== Buttons Css ===== */
@@ -559,25 +422,7 @@ button:focus {
   color: var(--white);
   border-color: var(--white);
 }
-.header-eight .video-button {
-  display: inline-flex;
-  align-items: center;
-}
-@media (max-width: 767px) {
-  .header-eight .video-button {
-    margin-top: 20px;
-  }
-}
-.header-eight .video-button .text {
-  display: inline-block;
-  margin-left: 15px;
-  color: var(--white);
-  font-weight: 600;
-}
-.header-eight .video-button .icon-btn {
-  background: var(--white);
-  color: var(--primary);
-}
+
 
 /*===========================
   about-05 css
@@ -1011,7 +856,7 @@ button:focus {
 .call-action {
   z-index: 2;
   padding: 100px 0;
-  background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+  background: #0474DC;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1031,7 +876,7 @@ button:focus {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("assets/images/call-action/overlay.png");
+ 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
