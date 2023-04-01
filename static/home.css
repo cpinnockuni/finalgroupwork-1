@@ -162,9 +162,7 @@ margin: auto;
 
 
 
-img {
-  max-width: 100%;
-}
+
 
 a {
   display: inline-block;
@@ -183,44 +181,9 @@ button:focus {
 
 
 
-.display-1 {
-  font-size: 5.5em;
-  line-height: 1.25;
+img {
+  width: 80%;
 }
-
-.display-2 {
-  font-size: 4.75em;
-  line-height: 1.25;
-}
-
-.display-3 {
-  font-size: 4em;
-  line-height: 1.25;
-}
-
-.display-4 {
-  font-size: 3.25em;
-  line-height: 1.25;
-}
-
-
-
-.text-small {
-  font-size: 0.875em;
-  line-height: 1.5;
-}
-
-.text-lg {
-  font-size: 1.15em;
-  line-height: 1.5;
-}
-
-.bg_cover {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 
 
 .btn {
