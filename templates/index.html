@@ -60,36 +60,17 @@
 <!--HERO SECTION OF THE PAGE-->
 
 
+<section class="hero1">
 
-  <!-- Start header Area -->
-  <section id="hero-area" class="header-area header-eight">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="header-content">
-            <h1>A digital Platform that help freshers find their way around.
-            </h1>
-            <p>
-              Relocating to the UK is a daunting process for international students. Are you feeling lost,confused and overwhelmed about the next step to take on arrival on campus? We have a guide to make your stay with us more convenient and exciting. Click on the button below to get started
+  <h1>A digital Platform that help freshers find their way around.</h1>
+<p> Relocating to the UK is a daunting process for international students. Are you feeling lost,confused and overwhelmed about the next step to take on arrival on campus? We have a guide to make your stay with us more convenient and exciting. Click on the button below to get started </p>
 
+<div class="buttonshero">
 
-            </p>
-            <div class="button">
-              <a href="#" class="btn primary-btn">Get Started</a>
-            <div class="button">
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-12">
-          <div class="header-image">
-            <img src="{{ url_for('static', filename='images/Rectangle.png') }}" alt="My Image">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <a href="#" class="buttonn1"> GET STARTED <a/>
+<span> <a href="#" class="buttonn1"> SIGNUP <a/> </span>
+</div>
+</section>
 
 
 
@@ -98,9 +79,10 @@
 
 <!--ABOUT US OF THE PAGE-->
 <section class="aboutussection">
+  <h1 class="aboutit"> ABOUT US </h1>
+<div class="aboutus" id="aboutus">
 
-<div class="aboutus">
-<h1> ABOUT US </h1>
+<br>
 <p>
 What can Freshstart do for you?
 At Freshstart, our goal is to help international
@@ -158,52 +140,23 @@ and language. Read more....
               <div class="question" onclick="toggleAnswer(1)">
                 <h5> <span class="plus" id="plus1">+</span>
                 <span class="minus" id="minus1">-</span>
-               What is JavaScript?</h5>
+               Who Make this Entire Webiste?</h5>
                 <div class="answer" id="answer1">
-                  JavaScript is a programming language used to make web pages interactive. It can be used to create animations, validate form data, and interact with back-end databases, among other things.
+                                  The Thre Main contributor is CHALSTON, CHALSTON AND CHALSTON
                 </div>
               </div>
               
               <div class="question" onclick="toggleAnswer(2)">
                 <h5> <span class="plus" id="plus2">+</span>
                 <span class="minus" id="minus2">-</span>
-               How do I write JavaScript code?</h5>
+               Who is the best?</h5>
                 <div class="answer" id="answer2">
-                  You can write JavaScript code directly in your HTML file using the <code>&lt;script&gt;</code> tag, or you can create a separate .js file and link to it using the <code>&lt;script src="yourfile.js"&gt;</code> tag.
+                 Chalston is the Best!
                 </div>
               </div>
                 
-              <div class="question" onclick="toggleAnswer(2)">
-                <h5> <span class="plus" id="plus2">+</span>
-                <span class="minus" id="minus2">-</span>
-               How do I write JavaScript code?</h5>
-                <div class="answer" id="answer2">
-                  You can write JavaScript code directly in your HTML file using the <code>&lt;script&gt;</code> tag, or you can create a separate .js file and link to it using the <code>&lt;script src="yourfile.js"&gt;</code> tag.
-                </div>
-              </div>
-
-                
-              <div class="question" onclick="toggleAnswer(2)">
-                <h5> <span class="plus" id="plus2">+</span>
-                <span class="minus" id="minus2">-</span>
-               How do I write JavaScript code?</h5>
-                <div class="answer" id="answer2">
-                  You can write JavaScript code directly in your HTML file using the <code>&lt;script&gt;</code> tag, or you can create a separate .js file and link to it using the <code>&lt;script src="yourfile.js"&gt;</code> tag.
-                </div>
-              </div>
-                
-              <div class="question" onclick="toggleAnswer(2)">
-                <h5> <span class="plus" id="plus2">+</span>
-                <span class="minus" id="minus2">-</span>
-               How do I write JavaScript code?</h5>
-                <div class="answer" id="answer2">
-                  You can write JavaScript code directly in your HTML file using the <code>&lt;script&gt;</code> tag, or you can create a separate .js file and link to it using the <code>&lt;script src="yourfile.js"&gt;</code> tag.
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
+             
+            
       </div>
     </div>
     <!-- container -->
@@ -631,14 +584,7 @@ and language. Read more....
   <!-- ========================= contact-section end ========================= -->
 
   <!-- ========================= map-section end ========================= -->
-  <section class="map-section map-style-9">
-    <div class="map-container">
-      <object style="border:0; height: 500px; width: 100%;"
-        data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
-    </div>
-    </div>
-  </section>
-
+ 
 
 
 
@@ -690,12 +636,11 @@ and language. Read more....
   
 <!--====== js ======-->
 <!--====== js ======-->
-<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
 <script src="{{ url_for('static', filename='js/glightbox.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 <script src="{{ url_for('static', filename='js/tiny-slider.js') }}"></script>
 
-  
   <script>
     const menuButton = document.querySelector(".menu");
     const menuItems = document.querySelector(".nav-mobile");

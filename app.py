@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from functools import wraps
 from flask import flash
-
+from flask import make_response
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -12,10 +12,9 @@ app.secret_key = 'mysecretkey'
 @app.route("/")
 def home():
 
-
-
-    return render_template ("index.html")
-
+    resp = make_response(render_template("index.html"))
+    resp.set_cookie("flavor", "choco", samesite="Lax")
+    return resp
 
 
 

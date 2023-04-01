@@ -130,7 +130,7 @@ a:hover{
 
 /** dark mode switch
 **/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
     /* Hide navigation links and call-to-action button */
     .nav-links, .cta{
       display:none;

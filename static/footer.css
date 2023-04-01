@@ -13,9 +13,9 @@
             DEFAULT
 ****************************/
 body{
-    scroll-behavior: auto;
-
-    margin: 0;
+    margin:0;
+    padding:0;
+  scroll-behavior: auto;
 }
 a{
     text-decoration:none !important;
