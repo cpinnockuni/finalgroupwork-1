@@ -95,16 +95,16 @@ def contact():
 
 
 
-@app.route("/services/community")
+@app.route("/services")
 
-def community():
-   return render_template("community.html")
-
-
+def services():
+   return render_template("services.html")
 
 
 
-@app.route("/services/freshergude")
+
+
+@app.route("/freshergude")
 def fresherguide():
     return render_template("fresherguide.html")
 
