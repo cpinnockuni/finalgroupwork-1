@@ -91,12 +91,12 @@ background-color: #4B8FD0;
 
 }
 
-body{
-  margin:0;
-  padding:0;
-scroll-behavior: auto;
+html { overflow-y: scroll; overflow-x:hidden; }
+body { position: absolute; }
+body {
+  width: 100%;
+margin: auto;
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 /*===========================
@@ -221,12 +221,7 @@ button:focus {
   background-position: center;
 }
 
-@media (max-width: 767px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
+
 
 .btn {
   font-weight: bold;
