@@ -38,6 +38,21 @@
 
 
 
+  .answer {
+    display: none;
+}
+.plus {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.minus {
+    display: none;
+    margin-right: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 
