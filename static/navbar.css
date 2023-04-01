@@ -58,7 +58,11 @@ a
 
 
 
+.nav-menu {
 
+    border: solid 2px #EBEBEB;
+    padding: 5px;
+}
 
 .navbar .menu-hamburger
 {

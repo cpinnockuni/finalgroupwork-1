@@ -290,13 +290,40 @@ button:focus {
 .hero1  h1 {
 
   width: 50%;
+  margin-left: 10px;
 }
 
 .hero1  p {
 
   width: 50%;
+  margin-left: 10px;
 }
 
+.buttonshero {
+  margin-left: 20px;
+}
+
+.buttonn1 {
+padding: 10px;
+
+}
+
+
+.butstart {
+
+border: solid 3px black;
+background-color: #FFA500;
+color: black;
+
+}
+
+.butsign {
+  margin-left: 25px;
+
+  border: solid 1px black;
+background-color: white;
+color: black;
+}
 
 /*===========================
   Section Title Five CSS
