@@ -3,6 +3,28 @@ from functools import wraps
 from flask import flash
 from flask import make_response
 
+
+import os
+import mysql.connector
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+# Retrieve environment variables for database connection
+host = os.getenv('DB_HOST')
+user = os.getenv('DB_USER')
+password = os.getenv('DB_PASSWORD')
+database = os.getenv('DB_DATABASE')
+
+# Connect to MySQL database
+cnx = mysql.connector.connect(
+    host=host,
+    user=user,
+    password=password,
+    database=database
+)
+
 app = Flask(__name__, static_url_path='/static')
 
 
@@ -28,52 +50,68 @@ def login_required(f):
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
-
-@app.route("/login", methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-     if request.method == 'POST':
-         
-      try:
+    # Redirect to login page if GET request
+    if request.method == 'GET':
+        return '''
+            <form method="post">
+                <p>Email: <input type="text" name="email"></p>
+                <p>Password: <input type="password" name="password"></p>
+                <p><input type="submit" value="Login"></p>
+            </form>
+        '''
 
-    
-        # Get the username and password from the form
-         username = request.form['username']
-         password = request.form['password']
-    
+    # Retrieve user credentials from request data
+    email = request.form.get('email')
+    password = request.form.get('password')
 
-         flash("Wrong Password or Username")
+    # Create database connection and cursor
+    cnx = mysql.connector.connect(**db_config)
+    cursor = cnx.cursor()
 
-      except Exception as error:
-          return render_template("login.html")
-         
-     else:
-         return render_template ("login.html")
+    # Query users table for matching email and password
+    query = "SELECT * FROM users WHERE email = %s AND password = %s"
+    values = (email, password)
+    cursor.execute(query, values)
 
+    # Retrieve matching user from query result
+    user = cursor.fetchone()
 
+    # Close database connection and cursor
+    cursor.close()
+    cnx.close()
 
+    # Check if user exists and redirect to appropriate page with flash message
+    if user:
+        flash('Login successful!', 'success')
+        return redirect(url_for('community'))
+    else:
+        flash('Invalid credentials.', 'error')
+        return redirect(url_for('login'))
 
 
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
-     if request.method == 'POST':
-         
-      try:
+    if request.method=="POST":
+    # Retrieve user details from request data
+     username = request.form.get('username')
+     email = request.form.get('email')
+     password = request.form.get('password')
 
-    
-        # Get the username and password from the form
-         username = request.form['username']
-         password = request.form['password']
-    
+    # Create database connection and cursor
+     cnx = mysql.connector.connect(**db_config)
+     cursor = cnx.cursor()
 
-         flash("Wrong Password or Username")
+    # Insert user details into users table
+     query = "INSERT INTO users (username, email, password) VALUES (%s, %s, %s)"
+     values = (username, email, password)
+     cursor.execute(query, values)
 
-      except Exception as error:
-          return render_template("signup.html")
-         
-     else:
-         return render_template ("signup.html")
-
-
+    # Commit changes and close database connection
+     cnx.commit()
+     cursor.close()
+     cnx.close()
 
 
 
@@ -102,6 +140,12 @@ def services():
 
 
 
+
+app.route('/community')
+@login_required
+def community():
+
+    return render_template ("community.html")
 
 
 @app.route("/freshergude")

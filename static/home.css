@@ -278,7 +278,10 @@ button:focus {
   pointer-events: none;
 }
 
+.heroimgmobile {
 
+  display: none;
+}
 
 
 .hero1 {
@@ -289,12 +292,20 @@ button:focus {
 
 @media (max-width: 767px) {
  .hero1 {
-  margin-bottom: 180px;
+  margin-bottom: 60px;
   background-image: url("images/Rectangle.png");
 
  }
 .hero1 p {
   width: 80%;
+}
+
+.heroimgmobile {
+
+  display: block;
+  height: 26vh;
+  margin-bottom: 60px;
+  width: 100%;
 }
 
 .hero1 h1 {

@@ -1,0 +1,17 @@
+
+.aboutussectiona h1{
+    width: 50%;
+
+    margin-left: 180px;
+}
+
+.aboutussectiona p {
+    width: 50%;
+ 
+    margin-left: 180px;
+}
+
+.aboutussectiona  {
+
+    justify-content: center;
+}
