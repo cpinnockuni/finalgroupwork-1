@@ -19,36 +19,51 @@ def home():
 
 
 
-
-# Define a decorator to check if the user is logged in
-def login_required(f):
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        if 'username' not in session:
-            return redirect(url_for('login'))
-        return f(*args, **kwargs)
-    return decorated_function
-
 @app.route("/login", methods=['GET', 'POST'])
 def login():
-     if request.method == 'POST':
+    if request.method == 'POST':
+        try:
+            # Get the username and password from the form
+            username = request.form['username']
+            password = request.form['password']
+
+            # Create database connection and cursor
+            conn = psycopg2.connect(
+                host=os.environ['DB_HOST'],
+                port=os.environ['DB_PORT'],
+                dbname=os.environ['DB_NAME'],
+                user=os.environ['DB_USER'],
+                password=os.environ['DB_PASSWORD']
+            )
+            cursor = conn.cursor()
+
+            # Execute SQL query to fetch user with matching username and password
+            query = "SELECT * FROM users WHERE username=%s AND password=%s"
+            cursor.execute(query, (username, password))
+
+            # Fetch the result
+            result = cursor.fetchone()
+
+            # Close the cursor and connection to the database
+            cursor.close()
+            conn.close()
+
+            if result:
+                # If user exists, redirect to the home page
+                return redirect(url_for('home'))
+            else:
+                # If no user found, show an error message
+                flash("Wrong Password or Username")
+                return render_template("login.html")
+        
+        except Exception as error:
+            # Handle any errors that occur
+            print(error)
+            return render_template("login.html")
          
-      try:
-
-    
-        # Get the username and password from the form
-         username = request.form['username']
-         password = request.form['password']
-    
-
-         flash("Wrong Password or Username")
-
-      except Exception as error:
-          return render_template("login.html")
-         
-     else:
-         return render_template ("login.html")
-
+    else:
+        # If request method is GET, show the login form
+        return render_template ("login.html")
 
 
 
@@ -95,10 +110,7 @@ def contact():
 
 
 
-@app.route("/services")
 
-def services():
-   return render_template("services.html")
 
 
 
